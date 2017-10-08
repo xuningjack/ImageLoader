@@ -13,5 +13,20 @@ ImageLoader mImageLoader = new ImageLoader.Builder().placeHolder(0).disableCache
 //直角的图片展示   
 ImageLoaderUtils.getInstance().loadImage(this, mImageLoader, mImageView, mImageUrl, 0);  
 //圆角的图片展示，半径200  
-ImageLoaderUtils.getInstance().loadImage(this, mImageLoader, mRoundImageView, mImageUrl, 200);  
+ImageLoaderUtils.getInstance().loadImage(this, mImageLoader, mRoundImageView, mImageUrl, 200);   
+
+最全的调用：  
+/**
+ * 带有请求参数列表和成功后回调的加载图片
+ * @param activity 对应的Activity实例
+ * @param imgloader
+ * @param imageView 加载的图片
+ * @param imgUrl 图片的url
+ * @param radius 圆角的弧度
+ * @param map 发送请求时需要的头部参数列表
+ * @param callback 请求成功后的回调接口
+ */
+ImageLoaderUtils.getInstance() loadImage(Activity activity, ImageLoader imgloader, final ImageView imageView,
+                          final String imgUrl, int radius, final Map<String, String> map, final Callback callback)
+
 
