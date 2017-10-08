@@ -8,9 +8,9 @@ Custom interface picture loading module, which supports Glide and so on（自定
 使用，详见demo：  
 1、在项目中的build.gradle中增加 compile project(path: ':imageloader')  
 2、初始化：
-ImageLoader mImageLoader = new ImageLoader.Builder().placeHolder(0).disableCache(true).build();
-3、加载图片：
-//直角的图片展示  
+ImageLoader mImageLoader = new ImageLoader.Builder().placeHolder(0).disableCache(true).build();  
+3、加载图片：  
+//直角的图片展示   
 ImageLoaderUtils.getInstance().loadImage(this, mImageLoader, mImageView, mImageUrl, 0);  
 //圆角的图片展示，半径200  
 ImageLoaderUtils.getInstance().loadImage(this, mImageLoader, mRoundImageView, mImageUrl, 200);  
