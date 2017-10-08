@@ -25,7 +25,7 @@ ImageLoaderUtils.getInstance().loadImage(this, mImageLoader, mRoundImageView, mI
  * @param radius 圆角的弧度
  * @param map 发送请求时需要的头部参数列表
  * @param callback 请求成功后的回调接口
- */
+ */  
 ImageLoaderUtils.getInstance() loadImage(Activity activity, ImageLoader imgloader, final ImageView imageView,
                           final String imgUrl, int radius, final Map<String, String> map, final Callback callback)
 
