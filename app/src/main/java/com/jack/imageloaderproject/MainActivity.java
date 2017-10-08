@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
 
         //直角的图片展示
         ImageLoaderUtils.getInstance().loadImage(this, mImageLoader, mImageView, mImageUrl, 0);
-        //圆角的图片展示
+        //圆角的图片展示，半径200
         ImageLoaderUtils.getInstance().loadImage(this, mImageLoader, mRoundImageView, mImageUrl, 200);
 
     }
